@@ -471,7 +471,7 @@
 
       <!-- SVG 手掌示意圖 -->
       <div class="hand-svg-wrap">
-        <svg viewBox="0 0 220 320" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 220 340" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <style>
               .hf { fill:#FDDCB5; stroke:#c8845a; stroke-width:1.8; }
@@ -480,30 +480,56 @@
               .tl { fill:#555; font-family:'Noto Sans TC',Arial,sans-serif; font-weight:700; }
             </style>
           </defs>
-          <!-- 拇指 -->
-          <path class="hf" d="M44 162 Q23 152 21 124 Q19 95 40 87 Q56 82 60 100 L60 165 Z"/>
-          <!-- 食指 (x=54-84, y=22-115) -->
-          <rect class="hf" x="54" y="22" width="30" height="93" rx="14"/>
-          <!-- 中指 (x=88-118, y=6-115) -->
-          <rect class="hf" x="88" y="6" width="30" height="109" rx="14"/>
-          <!-- 無名指 (x=122-150, y=12-115) -->
-          <rect class="hf" x="122" y="12" width="28" height="103" rx="13"/>
-          <!-- 小指 (x=154-178, y=40-115) -->
-          <rect class="hf" x="154" y="40" width="24" height="75" rx="11"/>
-          <!-- 手掌 -->
-          <path class="hf" d="M54 112 L178 112 Q198 112 198 130 L198 256 Q198 274 180 276 L66 276 Q48 276 46 258 L44 164 L60 164 L60 112 Z"/>
-          <!-- 分割線：手指與手掌之間（橫向） -->
-          <line class="dl" x1="44" y1="112" x2="198" y2="112"/>
-          <!-- 分割線：食中指 vs 無名小指（縱向，僅手指段） -->
-          <line class="dl" x1="120" y1="6" x2="120" y2="112"/>
-          <!-- 1P 標籤：左手指（食指＋中指） -->
-          <text class="pl" font-size="18" x="86"  y="66" text-anchor="middle">1P</text>
-          <!-- 1P 標籤：右手指（無名指＋小指） -->
-          <text class="pl" font-size="18" x="156" y="66" text-anchor="middle">1P</text>
-          <!-- 2P 標籤：整個手掌心（無縱線） -->
-          <text class="pl" font-size="24" x="122" y="202" text-anchor="middle">2P</text>
-          <!-- 底部總計 -->
-          <text class="tl" font-size="12" x="122" y="298" text-anchor="middle">整手 ＝ 4P</text>
+
+          <!--
+            手掌高度：y=155 → y=290  共 135px
+            中指長度：y=16  → y=155  共 139px
+            食指長度：y=38  → y=155  共 117px
+            無名指：  y=26  → y=155  共 129px
+            小指：    y=56  → y=155  共  99px
+            → 中指與掌心幾乎等長，手指整體與掌心視覺平衡
+          -->
+
+          <!-- ① 先畫手掌（底層） -->
+          <path class="hf" d="
+            M 60 155
+            L 178 155
+            Q 195 155 195 172
+            L 195 275
+            Q 195 290 178 290
+            L 64 290
+            Q 46 290 44 274
+            L 42 178
+            L 60 178
+            Z
+          "/>
+
+          <!-- ② 拇指 -->
+          <path class="hf" d="M44 178 Q20 166 18 136 Q16 104 38 90 Q56 82 62 104 L62 180 Z"/>
+
+          <!-- ③ 手指（蓋在手掌上方，根部略入手掌使接縫自然） -->
+          <!-- 食指 -->
+          <rect class="hf" x="50" y="38" width="30" height="122" rx="14"/>
+          <!-- 中指 -->
+          <rect class="hf" x="84" y="16" width="30" height="144" rx="14"/>
+          <!-- 無名指 -->
+          <rect class="hf" x="118" y="26" width="28" height="134" rx="13"/>
+          <!-- 小指 -->
+          <rect class="hf" x="150" y="56" width="24" height="104" rx="11"/>
+
+          <!-- ④ 分割線（最上層，覆蓋填色） -->
+          <!-- 橫向：手指與掌心分界 -->
+          <line class="dl" x1="42" y1="155" x2="195" y2="155"/>
+          <!-- 縱向：左兩指 vs 右兩指（食中 | 無名小） -->
+          <line class="dl" x1="115" y1="16" x2="115" y2="155"/>
+
+          <!-- ⑤ 份量標籤 -->
+          <text class="pl" font-size="18" x="80"  y="92"  text-anchor="middle">1P</text>
+          <text class="pl" font-size="18" x="152" y="92"  text-anchor="middle">1P</text>
+          <text class="pl" font-size="24" x="118" y="228" text-anchor="middle">2P</text>
+
+          <!-- ⑥ 底部總計 -->
+          <text class="tl" font-size="12" x="118" y="314" text-anchor="middle">整手 ＝ 4P</text>
         </svg>
       </div>
 
@@ -526,7 +552,7 @@
           <div><strong>手掌心（不含手指）＝ 2 份 P</strong></div>
         </div>
         <div style="margin-top:0.75rem; font-size:0.8rem; color:var(--muted); line-height:1.6;">
-          💡 優先選擇低脂肉品(如雞胸、魚、海鮮、里肌肉、板腱牛)，少選高油脂肉品如五花肉與加工肉品如香腸、丸餃類火鍋料。
+          💡 優先選擇低脂肉品(如雞胸、魚、海鮮、里肌肉、板腱牛)，少選高油脂肉品(如五花肉)與加工肉品(如香腸、丸餃類等火鍋料)。
         </div>
       </div>
 
