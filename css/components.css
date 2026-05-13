@@ -110,7 +110,7 @@
     gap: 0.25rem;
     border-bottom: 1px solid var(--border);
     box-shadow: var(--shadow-md);
-    transform: translateY(-110%);
+    transform: translateY(calc(-100% - var(--navbar-h)));
     transition: transform 0.3s ease;
   }
   .nav-links.open { transform: translateY(0); }
