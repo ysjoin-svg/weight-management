@@ -87,8 +87,9 @@
 
     /* ─── Stats ─── */
     .stats-section { background: #fff; padding: 3rem 0; border-bottom: 1px solid var(--border); }
-    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    @media (max-width: 600px) { .stats-grid { grid-template-columns: 1fr; } }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    @media (max-width: 860px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .stats-grid { grid-template-columns: 1fr; } }
 
     /* ─── 問題共鳴 ─── */
     .pain-section { background: var(--bg); }
@@ -258,8 +259,12 @@
         <div class="stat-label">累積服務學員</div>
       </div>
       <div class="stat-card" data-reveal>
-        <div class="stat-num num"><span data-target="5.8" data-decimal="1" data-suffix=" kg">0 kg</span></div>
-        <div class="stat-label">平均減脂量（12週）</div>
+        <div class="stat-num num"><span data-target="11.6" data-decimal="1" data-suffix=" kg">0 kg</span></div>
+        <div class="stat-label">平均減體重（12週）</div>
+      </div>
+      <div class="stat-card" data-reveal>
+        <div class="stat-num num"><span data-target="7.9" data-decimal="1" data-suffix=" kg">0 kg</span></div>
+        <div class="stat-label">平均減體脂（12週）</div>
       </div>
       <div class="stat-card" data-reveal>
         <div class="stat-num num"><span data-target="92" data-suffix="%">0%</span></div>
