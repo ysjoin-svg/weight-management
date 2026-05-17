@@ -39,12 +39,12 @@
     }
 
     /* ── 頁首 ── */
-    .page-header {
-      background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #1a1a2e 100%);
-      color: #fff;
-      padding: 3rem 1.5rem 2.5rem;
-      text-align: center;
-    }
+    .page-header { background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #1a1a2e 100%); color: #fff; }
+    .brand-bar { display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem; height: 56px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .brand-left { display: flex; align-items: center; gap: 0.5rem; }
+    .brand-logo { height: 36px; width: auto; object-fit: contain; border-radius: 6px; }
+    .brand-name { font-size: 1.15rem; font-weight: 700; }
+    .hero-content { padding: 3rem 1.5rem 2.5rem; text-align: center; }
     .badge {
       display: inline-block;
       background: rgba(255,255,255,0.15);
@@ -55,17 +55,9 @@
       letter-spacing: 0.1em;
       padding: 0.3rem 0.9rem;
       border-radius: 99px;
-      margin-bottom: 1rem;
     }
-    .page-header h1 {
-      font-size: clamp(1.7rem, 5vw, 2.5rem);
-      font-weight: 900;
-      margin-bottom: 0.6rem;
-    }
+    .page-header h1 { font-size: clamp(1.7rem, 5vw, 2.5rem); font-weight: 900; margin: 0.8rem 0 0.6rem; }
     .page-header p { color: rgba(255,255,255,0.65); font-size: 0.95rem; }
-    .brand-row { display: flex; align-items: center; justify-content: center; gap: 0.55rem; margin-bottom: 1rem; }
-    .brand-row img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; }
-    .brand-row span { font-size: 0.95rem; font-weight: 700; opacity: 0.9; }
 
     /* ── 目錄 ── */
     .toc {
@@ -533,13 +525,17 @@
 
 <!-- ── 頁首 ── -->
 <div class="page-header">
-  <div class="brand-row">
-    <img src="../logo.jpg" alt="Dr.Li">
-    <span>Dr.Li 科學體重管理師</span>
+  <div class="brand-bar">
+    <div class="brand-left">
+      <img src="../logo.jpg" alt="Dr.Li" class="brand-logo">
+      <span class="brand-name">Dr.Li 科學體重管理師</span>
+    </div>
+    <div class="badge">學員專屬教材</div>
   </div>
-  <div class="badge">學員專屬教材</div>
-  <h1>適應期注意事項</h1>
-  <p><strong>Dr.Li</strong> 科學體重管理 · 第一個月三件事，打好基礎</p>
+  <div class="hero-content">
+    <h1>適應期注意事項</h1>
+    <p><strong>Dr.Li</strong> 科學體重管理 · 第一個月三件事，打好基礎</p>
+  </div>
 </div>
 
 <!-- ── 目錄 ── -->
