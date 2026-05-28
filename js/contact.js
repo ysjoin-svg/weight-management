@@ -56,15 +56,17 @@ form.addEventListener('submit', e => {
   const message = buildLineMessage();
   const lineUrl = buildLineUrl(message);
 
+  const lineBtn = document.getElementById('openLineBtn');
+  if (lineBtn) lineBtn.href = lineUrl;
+
   if (navigator.clipboard) {
     navigator.clipboard.writeText(message).catch(() => {});
   }
 
-  const lineBtn = document.getElementById('openLineBtn');
-  if (lineBtn) lineBtn.href = lineUrl;
+  // 先嘗試同步跳轉（user gesture 內最可靠）
+  try { window.location.assign(lineUrl); } catch (_) {}
 
+  // UI 更新（若跳轉成功，下列畫面只在使用者按返回時可見；若被擋，留下備援按鈕）
   form.style.display = 'none';
   document.getElementById('formSuccess').classList.add('show');
-
-  window.location.href = lineUrl;
 });
