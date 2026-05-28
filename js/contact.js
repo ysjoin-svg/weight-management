@@ -70,13 +70,20 @@ function sendToAppsScript(data) {
   params.append('note', data.note);
   params.append('source', isMobile ? 'mobile' : 'desktop');
 
-  // keepalive: true 確保即使頁面跳轉，請求仍會送出
+  // 優先用 sendBeacon（瀏覽器保證頁面跳轉後仍會送出）
+  const body = params.toString();
+  if (navigator.sendBeacon) {
+    const blob = new Blob([body], { type: 'application/x-www-form-urlencoded;charset=UTF-8' });
+    const ok = navigator.sendBeacon(APPS_SCRIPT_URL, blob);
+    if (ok) return;
+  }
+  // fallback：fetch + keepalive
   fetch(APPS_SCRIPT_URL, {
     method: 'POST',
     mode: 'no-cors',
     keepalive: true,
     headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
-    body: params.toString(),
+    body,
   }).catch(() => {});
 }
 
