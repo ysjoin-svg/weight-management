@@ -187,10 +187,21 @@
         <div class="contact-form">
           <h3 style="margin-bottom:1.5rem;"><i class="bi bi-calendar-check" style="color:var(--accent)"></i> 預約表單</h3>
 
-          <div id="formSuccess" class="form-success">
-            <i class="bi bi-check-circle-fill" style="font-size:2rem;color:var(--accent);display:block;margin-bottom:0.75rem;"></i>
-            <strong>感謝你的諮詢申請！</strong><br>
-            <span style="font-size:0.9rem;font-weight:400;color:var(--text-secondary)">我會在 24 小時內透過你填寫的聯絡方式與你聯繫。</span>
+          <div id="formSuccess" class="form-success" style="text-align:center;">
+            <i class="bi bi-check-circle-fill" style="font-size:2.5rem;color:var(--accent);display:block;margin-bottom:0.5rem;"></i>
+            <strong style="font-size:1.05rem;">已產生 LINE 訊息，請完成最後一步</strong>
+            <p style="font-size:0.9rem;font-weight:400;color:var(--text-secondary);margin:0.75rem 0 1rem;">
+              系統會自動為你打開 LINE 並預填諮詢內容，<br>
+              請在 LINE 中按「送出」即完成預約。
+            </p>
+            <a id="openLineBtn" href="#" target="_blank" rel="noopener"
+               style="display:inline-flex;align-items:center;gap:0.45rem;background:#06C755;color:#fff;padding:0.75rem 1.5rem;border-radius:99px;font-weight:700;font-size:0.95rem;text-decoration:none;">
+              <i class="bi bi-line"></i> 打開 LINE 送出訊息
+            </a>
+            <p style="font-size:0.78rem;color:var(--text-secondary);margin-top:1.25rem;line-height:1.6;">
+              <i class="bi bi-info-circle"></i> 若 LINE 沒有自動開啟：<br>
+              諮詢內容已複製到剪貼簿，請加 <strong>@fqc1848m</strong> 為好友後貼上送出。
+            </p>
           </div>
 
           <form id="contactForm" novalidate>
