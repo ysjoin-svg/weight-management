@@ -116,48 +116,74 @@
 <section class="results-section">
   <div class="container">
 
-    <!-- 案例 A -->
+    <!-- 精選匿名案例：依追蹤期間總體重下降排序 -->
     <div class="result-card" data-reveal>
       <div class="result-card-header">
         <div>
-          <h3>學員 A</h3>
+          <h3>匿名學員案例</h3>
           <div class="case-meta">
-            <span class="tag"><i class="bi bi-gender-female"></i> 女性</span>
-            <span class="tag"><i class="bi bi-person"></i> 37 歲</span>
-            <span class="tag"><i class="bi bi-calendar3"></i> 追蹤 12 週</span>
-            <span class="tag"><i class="bi bi-briefcase"></i> 上班族</span>
+            <span class="tag"><i class="bi bi-calendar3"></i> 追蹤 17 週</span>
+            <span class="tag"><i class="bi bi-shield-check"></i> 匿名呈現</span>
           </div>
         </div>
-        <div class="result-badge">主訴：體重反彈 / 體脂偏高</div>
+        <div class="result-badge">體重與體脂率變化</div>
+      </div>
+      <table class="result-table">
+        <thead><tr><th>指標</th><th>開始</th><th>追蹤結束</th><th>變化</th></tr></thead>
+        <tbody>
+          <tr><td>體重</td><td class="num">78.8 kg</td><td class="num">57.7 kg</td><td class="change-neg num">−21.1 kg</td></tr>
+          <tr><td>體脂率</td><td class="num">40.1%</td><td class="num">28.3%</td><td class="change-neg num">−11.8%</td></tr>
+        </tbody>
+      </table>
+      <p style="margin:1rem 0 0;color:var(--muted);font-size:0.88rem;">追蹤期間：2025/07/15–2025/11/11。數據來自體組成紀錄；量測可能受設備及當日條件影響，個人結果不代表其他學員。</p>
+    </div>
+
+    <div class="result-card" data-reveal>
+      <div class="result-card-header">
+        <div>
+          <h3>匿名學員案例</h3>
+          <div class="case-meta">
+            <span class="tag"><i class="bi bi-calendar3"></i> 追蹤 17 週</span>
+            <span class="tag"><i class="bi bi-shield-check"></i> 匿名呈現</span>
+          </div>
+        </div>
+        <div class="result-badge">體重與體脂率變化</div>
+      </div>
+      <table class="result-table">
+        <thead><tr><th>指標</th><th>開始</th><th>追蹤結束</th><th>變化</th></tr></thead>
+        <tbody>
+          <tr><td>體重</td><td class="num">81.2 kg</td><td class="num">63.4 kg</td><td class="change-neg num">−17.8 kg</td></tr>
+          <tr><td>體脂率</td><td class="num">42.9%</td><td class="num">34.0%</td><td class="change-neg num">−8.9%</td></tr>
+        </tbody>
+      </table>
+      <p style="margin:1rem 0 0;color:var(--muted);font-size:0.88rem;">追蹤期間：2025/04/21–2025/08/17。數據來自體組成紀錄；量測可能受設備及當日條件影響，個人結果不代表其他學員。</p>
+    </div>
+
+    <!-- 精選匿名案例 -->
+    <div class="result-card" data-reveal>
+      <div class="result-card-header">
+        <div>
+          <h3>精選學員案例</h3>
+          <div class="case-meta">
+            <span class="tag"><i class="bi bi-calendar3"></i> 追蹤約 12 週</span>
+            <span class="tag"><i class="bi bi-shield-check"></i> 匿名呈現</span>
+          </div>
+        </div>
+        <div class="result-badge">體重與體脂率變化</div>
       </div>
       <table class="result-table">
         <thead>
-          <tr>
-            <th>指標</th>
-            <th>開始</th>
-            <th>12 週後</th>
-            <th>變化</th>
-          </tr>
+          <tr><th>指標</th><th>開始</th><th>追蹤結束</th><th>變化</th></tr>
         </thead>
         <tbody>
-          <tr><td>體重</td><td class="num">85.2 kg</td><td class="num">78.1 kg</td><td class="change-neg num">−7.1 kg</td></tr>
-          <tr><td>體脂率</td><td class="num">32.4%</td><td class="num">26.8%</td><td class="change-neg num">−5.6 個百分點</td></tr>
-          <tr><td>肌肉率</td><td class="num">55.2%</td><td class="num">60.1%</td><td class="change-pos num">+4.9 個百分點</td></tr>
-          <tr><td>內臟脂肪</td><td class="num">14</td><td class="num">10</td><td class="change-neg num">−4</td></tr>
-          <tr><td>BMI</td><td class="num">29.1</td><td class="num">26.7</td><td class="change-neg num">−2.4</td></tr>
-          <tr><td>基礎代謝率</td><td class="num">1,388 kcal</td><td class="num">1,456 kcal</td><td class="change-pos num">+68 kcal</td></tr>
+          <tr><td>體重</td><td class="num">97.6 kg</td><td class="num">80.7 kg</td><td class="change-neg num">−16.9 kg</td></tr>
+          <tr><td>體脂率</td><td class="num">28.7%</td><td class="num">22.3%</td><td class="change-neg num">−6.4%</td></tr>
         </tbody>
       </table>
-      <div class="chart-wrap">
-        <div class="chart-title">體重 & 體脂率 週趨勢</div>
-        <canvas id="chartA" height="120"></canvas>
-      </div>
-      <div class="result-quote">
-        「以前每次節食都痛苦，而且一停就反彈。這次完全不同，老師教我怎麼吃得對，不是吃得少，結果肌肉沒有流失，體脂率下降了將近 6 個百分點！現在精神也好很多。」
-      </div>
+      <p style="margin:1rem 0 0;color:var(--muted);font-size:0.88rem;">追蹤期間：2026/02/23–2026/05/17。數據來自體組成紀錄；量測可能受設備及當日條件影響，個人結果不代表其他學員。</p>
     </div>
 
-    <!-- 案例 B -->
+<!-- 案例 B -->
     <div class="result-card" data-reveal>
       <div class="result-card-header">
         <div>
@@ -182,7 +208,7 @@
         </thead>
         <tbody>
           <tr><td>體重</td><td class="num">96.5 kg</td><td class="num">87.2 kg</td><td class="change-neg num">−9.3 kg</td></tr>
-          <tr><td>體脂率</td><td class="num">35.1%</td><td class="num">27.9%</td><td class="change-neg num">−7.2 個百分點</td></tr>
+          <tr><td>體脂率</td><td class="num">35.1%</td><td class="num">27.9%</td><td class="change-neg num">−7.2%</td></tr>
           <tr><td>內臟脂肪</td><td class="num">18</td><td class="num">12</td><td class="change-neg num">−6</td></tr>
           <tr><td>空腹血糖</td><td class="num">116 mg/dL</td><td class="num">98 mg/dL</td><td class="change-neg num">−18 mg/dL</td></tr>
           <tr><td>三酸甘油酯</td><td class="num">190 mg/dL</td><td class="num">132 mg/dL</td><td class="change-neg num">−58 mg/dL</td></tr>
@@ -194,43 +220,7 @@
       </div>
     </div>
 
-    <!-- 案例 C -->
-    <div class="result-card" data-reveal>
-      <div class="result-card-header">
-        <div>
-          <h3>學員 C</h3>
-          <div class="case-meta">
-            <span class="tag"><i class="bi bi-gender-male"></i> 男性</span>
-            <span class="tag"><i class="bi bi-person"></i> 29 歲</span>
-            <span class="tag"><i class="bi bi-calendar3"></i> 追蹤 8 週</span>
-            <span class="tag"><i class="bi bi-heart-pulse"></i> 健身愛好者</span>
-          </div>
-        </div>
-        <div class="result-badge">主訴：健身停滯 / 體脂不降</div>
-      </div>
-      <table class="result-table">
-        <thead>
-          <tr>
-            <th>指標</th>
-            <th>開始</th>
-            <th>8 週後</th>
-            <th>變化</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>體重</td><td class="num">78.3 kg</td><td class="num">76.1 kg</td><td class="change-neg num">−2.2 kg</td></tr>
-          <tr><td>體脂率</td><td class="num">28.2%</td><td class="num">23.6%</td><td class="change-neg num">−4.6 個百分點</td></tr>
-          <tr><td>肌肉率</td><td class="num">58.9%</td><td class="num">63.8%</td><td class="change-pos num">+4.9 個百分點</td></tr>
-          <tr><td>肌肉量</td><td class="num">46.1 kg</td><td class="num">48.6 kg</td><td class="change-pos num">+2.5 kg</td></tr>
-          <tr><td>內臟脂肪</td><td class="num">9</td><td class="num">6</td><td class="change-neg num">−3</td></tr>
-        </tbody>
-      </table>
-      <div class="result-quote">
-        「運動三年了，體脂一直卡在28%降不下去，以為自己運動量不夠。後來才發現是飲食的蛋白質攝取嚴重不足，調整份量後8週就突破停滯期，體脂率降到約 24%！」
-      </div>
-    </div>
-
-    <!-- 案例 D -->
+<!-- 案例 D -->
     <div class="result-card" data-reveal>
       <div class="result-card-header">
         <div>
@@ -255,14 +245,91 @@
         </thead>
         <tbody>
           <tr><td>體重</td><td class="num">72.1 kg</td><td class="num">64.8 kg</td><td class="change-neg num">−7.3 kg</td></tr>
-          <tr><td>體脂率</td><td class="num">38.5%</td><td class="num">31.2%</td><td class="change-neg num">−7.3 個百分點</td></tr>
-          <tr><td>肌肉率</td><td class="num">50.1%</td><td class="num">56.8%</td><td class="change-pos num">+6.7 個百分點</td></tr>
+          <tr><td>體脂率</td><td class="num">38.5%</td><td class="num">31.2%</td><td class="change-neg num">−7.3%</td></tr>
+          <tr><td>肌肉率</td><td class="num">50.1%</td><td class="num">56.8%</td><td class="change-pos num">+6.7%</td></tr>
           <tr><td>尿酸</td><td class="num">7.8 mg/dL</td><td class="num">5.9 mg/dL</td><td class="change-neg num">−1.9 mg/dL</td></tr>
           <tr><td>BMI</td><td class="num">27.8</td><td class="num">24.9</td><td class="change-neg num">−2.9</td></tr>
         </tbody>
       </table>
       <div class="result-quote">
         「更年期後體重一直往上爬，試了好多方法都沒用。老師了解我的狀況後，設計了適合我年紀和生活型態的計劃，20週後不只體重降了，尿酸也回到正常值，膝蓋也輕鬆很多。」
+      </div>
+    </div>
+
+<!-- 案例 A -->
+    <div class="result-card" data-reveal>
+      <div class="result-card-header">
+        <div>
+          <h3>學員 A</h3>
+          <div class="case-meta">
+            <span class="tag"><i class="bi bi-gender-female"></i> 女性</span>
+            <span class="tag"><i class="bi bi-person"></i> 37 歲</span>
+            <span class="tag"><i class="bi bi-calendar3"></i> 追蹤 12 週</span>
+            <span class="tag"><i class="bi bi-briefcase"></i> 上班族</span>
+          </div>
+        </div>
+        <div class="result-badge">主訴：體重反彈 / 體脂偏高</div>
+      </div>
+      <table class="result-table">
+        <thead>
+          <tr>
+            <th>指標</th>
+            <th>開始</th>
+            <th>12 週後</th>
+            <th>變化</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>體重</td><td class="num">85.2 kg</td><td class="num">78.1 kg</td><td class="change-neg num">−7.1 kg</td></tr>
+          <tr><td>體脂率</td><td class="num">32.4%</td><td class="num">26.8%</td><td class="change-neg num">−5.6%</td></tr>
+          <tr><td>肌肉率</td><td class="num">55.2%</td><td class="num">60.1%</td><td class="change-pos num">+4.9%</td></tr>
+          <tr><td>內臟脂肪</td><td class="num">14</td><td class="num">10</td><td class="change-neg num">−4</td></tr>
+          <tr><td>BMI</td><td class="num">29.1</td><td class="num">26.7</td><td class="change-neg num">−2.4</td></tr>
+          <tr><td>基礎代謝率</td><td class="num">1,388 kcal</td><td class="num">1,456 kcal</td><td class="change-pos num">+68 kcal</td></tr>
+        </tbody>
+      </table>
+      <div class="chart-wrap">
+        <div class="chart-title">體重 & 體脂率 週趨勢</div>
+        <canvas id="chartA" height="120"></canvas>
+      </div>
+      <div class="result-quote">
+        「以前每次節食都痛苦，而且一停就反彈。這次完全不同，老師教我怎麼吃得對，不是吃得少，結果肌肉沒有流失，體脂率下降了將近 6%！現在精神也好很多。」
+      </div>
+    </div>
+
+<!-- 案例 C -->
+    <div class="result-card" data-reveal>
+      <div class="result-card-header">
+        <div>
+          <h3>學員 C</h3>
+          <div class="case-meta">
+            <span class="tag"><i class="bi bi-gender-male"></i> 男性</span>
+            <span class="tag"><i class="bi bi-person"></i> 29 歲</span>
+            <span class="tag"><i class="bi bi-calendar3"></i> 追蹤 8 週</span>
+            <span class="tag"><i class="bi bi-heart-pulse"></i> 健身愛好者</span>
+          </div>
+        </div>
+        <div class="result-badge">主訴：健身停滯 / 體脂不降</div>
+      </div>
+      <table class="result-table">
+        <thead>
+          <tr>
+            <th>指標</th>
+            <th>開始</th>
+            <th>8 週後</th>
+            <th>變化</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>體重</td><td class="num">78.3 kg</td><td class="num">76.1 kg</td><td class="change-neg num">−2.2 kg</td></tr>
+          <tr><td>體脂率</td><td class="num">28.2%</td><td class="num">23.6%</td><td class="change-neg num">−4.6%</td></tr>
+          <tr><td>肌肉率</td><td class="num">58.9%</td><td class="num">63.8%</td><td class="change-pos num">+4.9%</td></tr>
+          <tr><td>肌肉量</td><td class="num">46.1 kg</td><td class="num">48.6 kg</td><td class="change-pos num">+2.5 kg</td></tr>
+          <tr><td>內臟脂肪</td><td class="num">9</td><td class="num">6</td><td class="change-neg num">−3</td></tr>
+        </tbody>
+      </table>
+      <div class="result-quote">
+        「運動三年了，體脂一直卡在28%降不下去，以為自己運動量不夠。後來才發現是飲食的蛋白質攝取嚴重不足，調整份量後8週就突破停滯期，體脂率降到約 24%！」
       </div>
     </div>
 
