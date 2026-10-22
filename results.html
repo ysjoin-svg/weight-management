@@ -15,23 +15,6 @@
   <style>
     .results-section { background: var(--bg); padding: 4.5rem 0; }
 
-    .case-meta {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      margin-bottom: 0.25rem;
-    }
-    .case-meta .tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      background: rgba(255,255,255,0.2);
-      color: #fff;
-      padding: 0.2rem 0.7rem;
-      border-radius: 99px;
-      font-size: 0.78rem;
-    }
-
     .chart-wrap {
       padding: 1.75rem;
       background: var(--bg);
@@ -46,28 +29,12 @@
       margin-bottom: 1rem;
     }
 
-    /* 統計摘要列 */
-    .results-summary {
-      background: linear-gradient(135deg, #0a1f4d, var(--primary));
-      color: #fff;
-      padding: 4rem 0;
+    .results-note {
+      margin: 1.5rem 0 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.7;
     }
-    .results-summary h2 { color: #fff; text-align: center; margin-bottom: 1rem; }
-    .summary-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1.5rem;
-      text-align: center;
-    }
-    .summary-stat .num {
-      font-family: 'Inter';
-      font-size: 2.8rem;
-      font-weight: 700;
-      color: #6EE7B7;
-      line-height: 1;
-      margin-bottom: 0.5rem;
-    }
-    .summary-stat .label { font-size: 0.88rem; color: rgba(255,255,255,0.72); }
 
     .cta-section {
       background: var(--accent);
@@ -99,17 +66,8 @@
 <div class="page-banner">
   <div class="container">
     <h1>成果案例</h1>
-    <p>學員體組成追蹤案例；實際變化依個人狀況而異</p>
   </div>
 </div>
-
-<!-- ===== 統計摘要 ===== -->
-<section class="results-summary">
-  <div class="container">
-    <h2>成果資料說明</h2>
-    <p style="max-width:760px;margin:0 auto;text-align:center;color:rgba(255,255,255,0.82);">以下為個別學員的追蹤案例，呈現不同期間的體重與體組成變化。測量結果會受設備、測量條件與個人狀況影響，案例不代表每位學員都會有相同結果。</p>
-  </div>
-</section>
 
 <!-- ===== 成果案例 ===== -->
 <section class="results-section">
@@ -117,108 +75,119 @@
 
     <div class="result-card" data-reveal>
       <div class="result-card-header">
-        <div><h3>學員 A</h3><div class="case-meta"><span class="tag"><i class="bi bi-shield-check"></i> 匿名呈現</span></div></div>
+        <div><h3>學員 A</h3></div>
         <div class="result-badge">體重減少 25.7 kg</div>
       </div>
       <table class="result-table">
-        <thead><tr><th>指標</th><th>初次量測</th><th>最新量測</th><th>減少</th></tr></thead>
+        <thead><tr><th>指標</th><th>開始管理時</th><th>目前紀錄</th><th>減少</th></tr></thead>
         <tbody>
           <tr><td>體重</td><td class="num">81.2 kg</td><td class="num">55.5 kg</td><td class="change-neg num">−25.7 kg</td></tr>
           <tr><td>體脂肪量</td><td class="num">34.8 kg</td><td class="num">15.7 kg</td><td class="change-neg num">−19.1 kg</td></tr>
           <tr><td>體脂率</td><td class="num">42.9%</td><td class="num">28.3%</td><td class="change-neg num">−14.6%</td></tr>
           <tr><td>內臟脂肪</td><td class="num">17</td><td class="num">7</td><td class="change-neg num">−10</td></tr>
           <tr><td>BMI</td><td class="num">31.3</td><td class="num">21.4</td><td class="change-neg num">−9.9</td></tr>
+          <tr><td>肌肉率</td><td class="num">53.8%</td><td class="num">67.6%</td><td class="change-pos num">+13.8%</td></tr>
         </tbody>
       </table>
-      <div class="result-quote">學員心得整理：生活壓力曾讓飲食和體重再次失控，她重新調回生活步調，依照個人狀況調整飲食配比。她分享，現在不只看體重，更重視體脂下降、肌肉保留與能持續維持的飲食習慣。</div>
+      <div class="result-quote"><strong>學員心得</strong>：曾因生活壓力中斷管理，重新開始後依個人狀況調整飲食配比。她分享，現在不只看體重，也更重視體脂變化、肌肉保留與能長期維持的飲食習慣。</div>
     </div>
 
     <div class="result-card" data-reveal>
       <div class="result-card-header">
-        <div><h3>學員 B</h3><div class="case-meta"><span class="tag"><i class="bi bi-shield-check"></i> 匿名呈現</span></div></div>
+        <div><h3>學員 B</h3></div>
         <div class="result-badge">體重減少 25.3 kg</div>
       </div>
       <table class="result-table">
-        <thead><tr><th>指標</th><th>初次量測</th><th>最新量測</th><th>減少</th></tr></thead>
+        <thead><tr><th>指標</th><th>開始管理時</th><th>目前紀錄</th><th>減少</th></tr></thead>
         <tbody>
           <tr><td>體重</td><td class="num">78.8 kg</td><td class="num">53.5 kg</td><td class="change-neg num">−25.3 kg</td></tr>
           <tr><td>體脂肪量</td><td class="num">31.6 kg</td><td class="num">13.6 kg</td><td class="change-neg num">−18.0 kg</td></tr>
           <tr><td>體脂率</td><td class="num">40.1%</td><td class="num">25.5%</td><td class="change-neg num">−14.6%</td></tr>
           <tr><td>內臟脂肪</td><td class="num">11</td><td class="num">5</td><td class="change-neg num">−6</td></tr>
           <tr><td>BMI</td><td class="num">29.7</td><td class="num">20.1</td><td class="change-neg num">−9.6</td></tr>
+          <tr><td>肌肉率</td><td class="num">56.1%</td><td class="num">70.3%</td><td class="change-pos num">+14.2%</td></tr>
         </tbody>
       </table>
+      <div class="result-quote"><strong>心得文案草稿（待學員確認）</strong>：「體檢報告紅字出來我很緊張，但不知道從哪裡改起。老師幫我把每個數值都解釋清楚，然後告訴我飲食要怎麼調整。16週後複檢，血糖、血脂全部回到正常範圍，醫生也說不用吃藥了！」</div>
     </div>
 
     <div class="result-card" data-reveal>
       <div class="result-card-header">
-        <div><h3>學員 C</h3><div class="case-meta"><span class="tag"><i class="bi bi-shield-check"></i> 匿名呈現</span></div></div>
+        <div><h3>學員 C</h3></div>
         <div class="result-badge">體重減少 19.8 kg</div>
       </div>
       <table class="result-table">
-        <thead><tr><th>指標</th><th>初次量測</th><th>最新量測</th><th>減少</th></tr></thead>
+        <thead><tr><th>指標</th><th>開始管理時</th><th>目前紀錄</th><th>減少</th></tr></thead>
         <tbody>
           <tr><td>體重</td><td class="num">97.6 kg</td><td class="num">77.8 kg</td><td class="change-neg num">−19.8 kg</td></tr>
           <tr><td>體脂肪量</td><td class="num">28.0 kg</td><td class="num">16.0 kg</td><td class="change-neg num">−12.0 kg</td></tr>
           <tr><td>體脂率</td><td class="num">28.7%</td><td class="num">20.6%</td><td class="change-neg num">−8.1%</td></tr>
           <tr><td>內臟脂肪</td><td class="num">13</td><td class="num">7</td><td class="change-neg num">−6</td></tr>
           <tr><td>BMI</td><td class="num">30.1</td><td class="num">24.0</td><td class="change-neg num">−6.1</td></tr>
+          <tr><td>肌肉率</td><td class="num">67.4%</td><td class="num">75.1%</td><td class="change-pos num">+7.7%</td></tr>
         </tbody>
       </table>
+      <div class="result-quote"><strong>心得文案草稿（待學員確認）</strong>：「更年期後體重一直往上爬，試了好多方法都沒用。老師了解我的狀況後，設計了適合我年紀和生活型態的計劃，20週後不只體重降了，尿酸也回到正常值，膝蓋也輕鬆很多。」</div>
     </div>
 
     <div class="result-card" data-reveal>
       <div class="result-card-header">
-        <div><h3>學員 D</h3><div class="case-meta"><span class="tag"><i class="bi bi-shield-check"></i> 匿名呈現</span></div></div>
+        <div><h3>學員 D</h3></div>
         <div class="result-badge">體重減少 17.7 kg</div>
       </div>
       <table class="result-table">
-        <thead><tr><th>指標</th><th>初次量測</th><th>最新量測</th><th>減少</th></tr></thead>
+        <thead><tr><th>指標</th><th>開始管理時</th><th>目前紀錄</th><th>減少</th></tr></thead>
         <tbody>
           <tr><td>體重</td><td class="num">108.0 kg</td><td class="num">90.3 kg</td><td class="change-neg num">−17.7 kg</td></tr>
           <tr><td>體脂肪量</td><td class="num">32.9 kg</td><td class="num">22.5 kg</td><td class="change-neg num">−10.4 kg</td></tr>
           <tr><td>體脂率</td><td class="num">30.5%</td><td class="num">24.9%</td><td class="change-neg num">−5.6%</td></tr>
           <tr><td>內臟脂肪</td><td class="num">18</td><td class="num">10</td><td class="change-neg num">−8</td></tr>
           <tr><td>BMI</td><td class="num">32.2</td><td class="num">27.0</td><td class="change-neg num">−5.2</td></tr>
+          <tr><td>肌肉率</td><td class="num">65.8%</td><td class="num">70.9%</td><td class="change-pos num">+5.1%</td></tr>
         </tbody>
       </table>
+      <div class="result-quote"><strong>心得文案草稿（待學員確認）</strong>：「以前每次節食都痛苦，而且一停就反彈。這次完全不同，老師教我怎麼吃得對，不是吃得少，結果肌肉沒有流失，體脂率下降了將近 6%！現在精神也好很多。」</div>
     </div>
 
     <div class="result-card" data-reveal>
       <div class="result-card-header">
-        <div><h3>學員 E</h3><div class="case-meta"><span class="tag"><i class="bi bi-shield-check"></i> 匿名呈現</span></div></div>
+        <div><h3>學員 E</h3></div>
         <div class="result-badge">體重減少 12.9 kg</div>
       </div>
       <table class="result-table">
-        <thead><tr><th>指標</th><th>初次量測</th><th>最新量測</th><th>減少</th></tr></thead>
+        <thead><tr><th>指標</th><th>開始管理時</th><th>目前紀錄</th><th>減少</th></tr></thead>
         <tbody>
           <tr><td>體重</td><td class="num">88.65 kg</td><td class="num">75.75 kg</td><td class="change-neg num">−12.9 kg</td></tr>
           <tr><td>體脂肪量</td><td class="num">26.95 kg</td><td class="num">16.80 kg</td><td class="change-neg num">−10.15 kg</td></tr>
           <tr><td>體脂率</td><td class="num">30.4%</td><td class="num">22.2%</td><td class="change-neg num">−8.2%</td></tr>
           <tr><td>內臟脂肪</td><td class="num">15</td><td class="num">7</td><td class="change-neg num">−8</td></tr>
           <tr><td>BMI</td><td class="num">28.9</td><td class="num">24.7</td><td class="change-neg num">−4.2</td></tr>
+          <tr><td>肌肉率</td><td class="num">未記錄</td><td class="num">73.5%</td><td class="num">—</td></tr>
         </tbody>
       </table>
+      <div class="result-quote"><strong>心得文案草稿（待學員確認）</strong>：「運動三年了，體脂一直卡在28%降不下去，以為自己運動量不夠。後來才發現是飲食的蛋白質攝取嚴重不足，調整份量後8週就突破停滯期，體脂率降到約 24%！」</div>
     </div>
 
     <div class="result-card" data-reveal>
       <div class="result-card-header">
-        <div><h3>學員 F</h3><div class="case-meta"><span class="tag"><i class="bi bi-shield-check"></i> 匿名呈現</span></div></div>
+        <div><h3>學員 F</h3></div>
         <div class="result-badge">體重減少 8.9 kg</div>
       </div>
       <table class="result-table">
-        <thead><tr><th>指標</th><th>初次量測</th><th>最新量測</th><th>減少</th></tr></thead>
+        <thead><tr><th>指標</th><th>開始管理時</th><th>目前紀錄</th><th>減少</th></tr></thead>
         <tbody>
           <tr><td>體重</td><td class="num">73.05 kg</td><td class="num">64.15 kg</td><td class="change-neg num">−8.9 kg</td></tr>
           <tr><td>體脂肪量</td><td class="num">18.30 kg</td><td class="num">13.02 kg</td><td class="change-neg num">−5.28 kg</td></tr>
           <tr><td>體脂率</td><td class="num">25.1%</td><td class="num">20.3%</td><td class="change-neg num">−4.8%</td></tr>
           <tr><td>內臟脂肪</td><td class="num">8</td><td class="num">5</td><td class="change-neg num">−3</td></tr>
           <tr><td>BMI</td><td class="num">25.3</td><td class="num">22.2</td><td class="change-neg num">−3.1</td></tr>
+          <tr><td>肌肉率</td><td class="num">未記錄</td><td class="num">75.8%</td><td class="num">—</td></tr>
         </tbody>
       </table>
-      <div class="result-quote">學員分享：體檢時醫師告知，超音波已看不到原有的中度脂肪肝。</div>
+      <div class="result-quote"><strong>學員分享</strong>：學員表示，體檢時醫師告知超音波已看不到原有的中度脂肪肝。</div>
     </div>
 
+    <p class="results-note">備註：體組成數據取自學員紀錄，可能受設備與當日量測條件影響；肌肉率未記錄表示該次沒有可供比較的數值。</p>
   </div>
 </section>
 <!-- ===== CTA ===== -->
